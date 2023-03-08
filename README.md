@@ -1,46 +1,19 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 架构整洁之道 
+* 最近读完《架构整洁之道》，对架构有了更深层次的认识
+* 做一个TodoList的应用
+## TodoList
+### 创建
+* 用户输入标题、事项的详细内容、选择提醒时间点、是否到时间提醒等内容。创建成功
+* 这个待办事项会加入到自己的日程里，根据用户的设置，到时间后是否会提醒用户。（待定）
+### 查看
+* 用户以时间线的方式，可以查看自己的当天的待办事项
+### 删除
+* 用户可以删除自己的事项，该事项进入垃圾桶里
+### 修改
+* 用户可以修改标题、事项的详细内容、提醒时间、是否到时间提醒等内容
+### 垃圾桶
+* 找回自己删除的事项
+* 删除垃圾桶里的待办事项，不能找回
+### 平台
+* Web、H5、App、小程序
+## 实现
