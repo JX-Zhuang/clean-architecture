@@ -27,3 +27,4 @@
 * interactor是核心模块，负责业务的具体实现，以及读写数据库，返回数据
 * database是数据存储，暂时有localStorage、sessionStorage、内存三种方式
 * 模块之间、模块内部之间依赖接口，不依赖实现
+* 支持两种请求方式axios、fetch。需要定义IHTTP接口，axios和fetch实现IHTTP

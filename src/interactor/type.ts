@@ -8,3 +8,7 @@ export interface IDataGetWay {
     getDetail: (id: string) => ITodo | null;
     getTrashList: () => ITodo[] | null;
 };
+export interface ICreateInteractor<Interactor> {
+    createLocalStorage: () => Interactor;
+    createMemory: () => Interactor;
+}
